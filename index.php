@@ -48,15 +48,15 @@ $dog_imagen_url = $dog->message;
 <a href="doc/index.html"> Ver documentacion </a> <br>
 
 
-    <h1> Imágenes de Perros, cambiando cada 5 segundos </h1>
+    <h1> Imágenes de Perros, cambiando cada 6 segundos </h1>
     <!-- Se muestra la imagen del perro -->
     <img src="<?php echo $dog_imagen_url; ?>" alt="Imagen de Perro">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Cada 5 segundos (5000 milisegundos) se ejecutará la función refrescar
-            setTimeout(refrescar, 5000);
+            // Cada 6 segundos (6000 milisegundos) se ejecutará la función refrescar
+            setTimeout(refrescar, 6000);
         });
 
         function refrescar(){
